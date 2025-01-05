@@ -6,7 +6,7 @@ demoURL: ""
 repoURL: "https://github.com/guilhermefgs/guilhermefgs.github.io"
 ---
 
-- [ ] Enable mathematical equations for blog posts and projects
+- [x] Enable mathematical equations for blog posts and projects
     - [This template](https://astro.build/themes/details/astro-micro-academics/) allows latex to include mathematical equations
 - [ ] Add blog post categories
 - [ ] Allow filtering for blog posts

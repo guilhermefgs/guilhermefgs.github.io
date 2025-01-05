@@ -1,7 +1,6 @@
 ---
-title: "Astro Sphere"
-description: "Portfolio and blog build with astro."
-date: "Mar 18 2024"
-demoURL: "https://astro-sphere-demo.vercel.app"
-repoURL: "https://github.com/markhorn-dev/astro-sphere"
+title: "Classical Portfolio Optimization using Numpy"
+description: "Winners of Itaú Asset Management Quant Finance Competition"
+date: "May 01 2021"
+repoURL: "https://github.com/turing-usp/hack-itau-quant"
 ---
