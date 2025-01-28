@@ -14,8 +14,18 @@ const socialLinks: {
 }[] = [
 	{
 		friendlyName: "Github",
-		link: "https://github.com/chrismwilliams/astro-cactus",
+		link: "https://github.com/guilhermefgs",
 		name: "mdi:github",
+	},
+	{
+		friendlyName: "Linkedin",
+		link: "https://www.linkedin.com/in/guilhermefgs/",
+		name: "mdi:linkedin",
+	},
+	{
+		friendlyName: "Mail",
+		link: "mailto:guilhermefgs@proton.me",
+		name: "mdi:email",
 	},
 ];
 ---
@@ -32,7 +42,7 @@ const socialLinks: {
 						rel={`noreferrer ${isWebmention ? "me authn" : ""}`}
 						target="_blank"
 					>
-						<Icon aria-hidden="true" class="h-8 w-8" focusable="false" name={name} />
+						<Icon aria-hidden="true" class="h-7 w-7" focusable="false" name={name} />
 						<span class="sr-only">{friendlyName}</span>
 					</a>
 				</li>
