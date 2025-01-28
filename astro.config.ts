@@ -14,10 +14,12 @@ import { siteConfig } from "./src/site.config";
 import remarkDirective from "remark-directive"; /* Handle ::: directives as nodes */
 import { remarkAdmonitions } from "./src/plugins/remark-admonitions"; /* Add admonitions */
 import { remarkReadingTime } from "./src/plugins/remark-reading-time";
+import remarkMath from 'remark-math';   // relevant
 
 // Rehype plugins
 import rehypeExternalLinks from "rehype-external-links";
 import rehypeUnwrapImages from "rehype-unwrap-images";
+import rehypeKatex from 'rehype-katex'; // relevant
 
 // https://astro.build/config
 export default defineConfig({
@@ -32,7 +34,10 @@ export default defineConfig({
 			nesting: true,
 		}),
 		sitemap(),
-		mdx(),
+		mdx({
+			remarkPlugins: [remarkMath], // relevant
+			rehypePlugins: [rehypeKatex] // relevant
+		}),
 		robotsTxt(),
 		webmanifest({
 			// See: https://github.com/alextim/astro-lib/blob/main/packages/astro-webmanifest/README.md
