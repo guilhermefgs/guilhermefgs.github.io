@@ -12,7 +12,6 @@ import { siteConfig } from "./src/site.config";
 
 // Remark plugins
 import remarkDirective from "remark-directive"; /* Handle ::: directives as nodes */
-import { remarkAdmonitions } from "./src/plugins/remark-admonitions"; /* Add admonitions */
 import { remarkReadingTime } from "./src/plugins/remark-reading-time";
 import remarkMath from 'remark-math';   // relevant
 
@@ -88,7 +87,7 @@ export default defineConfig({
 			],
 			rehypeUnwrapImages,
 		],
-		remarkPlugins: [remarkReadingTime, remarkDirective, remarkAdmonitions],
+		remarkPlugins: [remarkReadingTime, remarkDirective],
 		remarkRehype: {
 			footnoteLabelProperties: {
 				className: [""],
