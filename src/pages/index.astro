@@ -8,30 +8,32 @@ import PageLayout from "@/layouts/Base.astro";
 import { collectionDateSort } from "@/utils/date";
 
 // Posts
-const MAX_POSTS = 10;
+const MAX_POSTS = 5;
 const allPosts = await getAllPosts();
 const allPostsByDate = allPosts
 	.sort(collectionDateSort)
 	.slice(0, MAX_POSTS) as CollectionEntry<"post">[];
 
 // Notes
-const MAX_NOTES = 5;
+const MAX_NOTES = 2;
 const allNotes = await getCollection("note");
 const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 ---
 
 <PageLayout meta={{ title: "Home" }}>
 	<section>
-		<h1 class="title mb-6">Hi, I'm Guilherme 👋🏽!</h1>
+		<h1 class="title mb-6">Hi, I'm Guilherme! 👋🏽</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, a simple starter that you can use to create your website or blog.
-			If you want to know more about how you can customise me, add more posts, and make it your own,
-			click on the GitHub icon link below and it will take you to my repo.
+			Welcome onboard, this is my safespace for developing thoughts, projects and sharing ideas. I
+			am a curious human being, interested in developing great technology to improve our future.
+		</p>
+		<p class="mb-4">
+			Check out my <a class="cactus-link" href={`/tags/project/`}>projects</a>.
 		</p>
 		<SocialList />
 	</section>
 	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-6 text-xl text-accent"><a href="/posts/">Posts</a></h2>
+		<h2 class="title mb-6 text-xl text-accent"><a href="/posts/">Latest Posts</a></h2>
 		<ul class="space-y-4" role="list">
 			{
 				allPostsByDate.map((p) => (
@@ -46,7 +48,7 @@ const latestNotes = allNotes.sort(collectionDateSort).slice(0, MAX_NOTES);
 		latestNotes.length > 0 && (
 			<section class="mt-16">
 				<h2 class="title mb-6 text-xl text-accent">
-					<a href="/notes/">Notes</a>
+					<a href="/notes/">Latest Notes</a>
 				</h2>
 				<ul class="space-y-4" role="list">
 					{latestNotes.map((note) => (
