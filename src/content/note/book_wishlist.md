@@ -11,6 +11,7 @@ This is my current book wishlist, I intend to update it regularly, maybe bring d
 
 | Topic | Title | Author |
 | ----- | ----- | ------ |
+| Luck | The Serendipity Mindset | Christian Busch |
 | Entrepreneurship | A Busca | Jorge Gerdau |
 
 

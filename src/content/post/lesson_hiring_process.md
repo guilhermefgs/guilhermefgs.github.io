@@ -6,7 +6,9 @@ tags: ["hiring", "interviews", "job"]
 draft: true
 ---
 
-## Itaú
+## Background with Hiring
+
+# Itaú
 
 Here is the thing, for someone who knows nothing about the banks or credit risk such presentations are useless. They talked a lot and I couldn't understand much. 
 Here is what I should have asked for all of them:
@@ -20,3 +22,15 @@ I asked something much more ridiculous but was ok, and by the end of the appoint
 [^1]: Don't get me wrong, I say ridiculous because I was asking without understanding, and I should have been more vulnerable and said: I'm not getting it!
 
 Well, it worked. 
+
+### BTG Pactual
+
+I joined 
+
+### LSI-TEC
+
+### ETA Fabrik
+
+### Solactive AG
+
+## Thoughts on what made a difference
